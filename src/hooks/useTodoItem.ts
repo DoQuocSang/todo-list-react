@@ -32,7 +32,7 @@ export function useTodoItem({ todo }: TodoItemProps) {
     handleUpdateTodo(updatedTodo);
   }
 
-  function onDeleteTodo(id: number) {
+  function onDeleteTodo(id: string) {
     handleDeleteTodo(id);
   }
 
@@ -51,7 +51,7 @@ export function useTodoItem({ todo }: TodoItemProps) {
     }
   }
 
-  function onCompleteChange(id: number, completed: boolean) {
+  function onCompleteChange(id: string, completed: boolean) {
     handleCompleteChange(id, completed);
   }
 
